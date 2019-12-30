@@ -38,9 +38,8 @@ module.exports = (env, args) => {
                      window.solid.auth = { fetch: (a, b) => window.fetch(a, b) }
                  }`,
         footer: `
-        let {term,NextId,fromNT,fetcher,graph,lit,st,sym,blankNode,defaultGraph,literal,namedNode,quad,triple,variable,isStatement,isStore,isCollection,isRDFlibObject,isVariable,isTerm,isLiteral,isQuad,isNamedNode,isBlankNode,isSubject,isPredicate,isRDFObject,isGraph,BlankNode,Collection,convert,DataFactory,Empty,Fetcher,Formula,Store,jsonParser,Literal,log,N3Parser,NamedNode,Namespace,Node,parse,Query,queryToSPARQL,RDFaProcessor,RDFParser,serialize,Serializer,SPARQLToQuery,sparqlUpdateParser,Statement,UpdateManager,UpdatesSocket,UpdatesVia,uri,Util,Variable,IndexedFormula,termValue} = rdflib;
-
-        export {term,NextId,fromNT,fetcher,graph,lit,st,sym,blankNode,defaultGraph,literal,namedNode,quad,triple,variable,isStatement,isStore,isCollection,isRDFlibObject,isVariable,isTerm,isLiteral,isQuad,isNamedNode,isBlankNode,isSubject,isPredicate,isRDFObject,isGraph,BlankNode,Collection,convert,DataFactory,Empty,Fetcher,Formula,Store,jsonParser,Literal,log,N3Parser,NamedNode,Namespace,Node,parse,Query,queryToSPARQL,RDFaProcessor,RDFParser,serialize,Serializer,SPARQLToQuery,sparqlUpdateParser,Statement,UpdateManager,UpdatesSocket,UpdatesVia,uri,Util,Variable,IndexedFormula,termValue};`
+          export default window.$rdf;
+        `
       }),
     ],
     externals: {
